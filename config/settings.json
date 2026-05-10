@@ -1,0 +1,55 @@
+{
+    "app": {
+        "name": "AirPaste",
+        "version": "3.0.0",
+        "debug_mode": true,
+        "start_minimized": true,
+        "auto_start_detection": true,
+        "sound_feedback": false,
+        "startup_with_windows": false
+    },
+    "camera": {
+        "index": 0,
+        "capture_width": 640,
+        "capture_height": 480,
+        "inference_width": 256,
+        "inference_height": 192,
+        "target_fps": 30,
+        "reconnect_delay_sec": 2.0,
+        "max_reconnect_attempts": 10
+    },
+    "gesture": {
+        "fist_threshold": 0.20,
+        "palm_threshold": 0.70,
+        "min_detection_confidence": 0.55,
+        "min_tracking_confidence": 0.45,
+        "landmark_smoothing_alpha": 0.6,
+        "transition_vote_frames": 2,
+        "transition_debounce_sec": 0.4
+    },
+    "cooldown": {
+        "screenshot_sec": 0.4,
+        "paste_sec": 0.4
+    },
+    "overlay": {
+        "preview_width": 200,
+        "preview_height": 150,
+        "fade_in_ms": 200,
+        "fade_out_ms": 150,
+        "display_duration_ms": 3000,
+        "position": "bottom_right",
+        "max_opacity": 0.90
+    },
+    "performance": {
+        "frame_skip_enabled": false,
+        "process_every_n_frames": 1,
+        "camera_buffer_size": 1,
+        "max_queue_size": 4
+    },
+    "logging": {
+        "console_level": "INFO",
+        "file_level": "DEBUG",
+        "max_file_size_mb": 5,
+        "backup_count": 3
+    }
+}
